@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nike Store</title>
+</head>
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <h2>StyleShoeLife.com</h2>
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="images\search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem" data-index="0">AIR FORCE</h3>
+            <h3 class="menuItem" data-index="1">JORDAN</h3>
+            <h3 class="menuItem" data-index="2">BLAZER</h3>
+        </div>
+    </nav>
+
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem" id="sliderItem0">
+                <img src="images\air.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR FORCE<br> NEW<br> SEASON</h1>
+                <h2 class="sliderPrice">Rs.1999</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+            <div class="sliderItem" id="sliderItem1">
+                <img src="images\jordan.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR JORDAN<br> NEW<br> SEASON</h1>
+                <h2 class="sliderPrice">Rs 1149</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+            <div class="sliderItem" id="sliderItem2">
+                <img src="images\blazer.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BLAZER<br> NEW<br> SEASON</h1>
+                <h2 class="sliderPrice">Rs 2100</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img src="images\shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img src="images\return.png" alt="" class="featureIcon">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">Simply return it within 30 days for an exchange.</span>
+        </div>
+        <div class="feature">
+            <img src="images/gift.png" alt="" class="featureIcon">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img src="images\gift.png" alt="" class="featureIcon">
+            <span class="featureTitle">CONTACT US</span>
+            <span class="featureDesc">Contact us 24 hours a day, 7 days a week.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="images\air.png" alt="" class="productImg" id="mainProductImg">
+        <div class="productDetails">
+            <h1 class="productTitle">AIR FORCE</h1>
+            <h2 class="productPrice">Rs 1999</h2>
+            <p class="productDesc">
+                The Air Force 1 was created by designer Bruce Kilgore and was the first basketball shoe to use the Nike Air technology.
+            </p>
+            <div class="colors">
+                <div class="color" style="background-color: rgb(9, 9, 9);" data-color="black"></div>
+                <div class="color" style="background-color: #00f;" data-color="blue"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">38</div>
+                <div class="size">39</div>
+                <div class="size">40</div>
+                <div class="size">41</div>
+            </div>
+            <button class="buyButton">BUY NOW!</button>
+        </div>
+    </div>
+
+    <div class="payment" id="payment">
+        <div class="paymentContent">
+            <h1 class="payTitle">Payment Details</h1>
+            <form id="paymentForm">
+                <div class="formGroup">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" class="payInput" required>
+                </div>
+                <div class="formGroup">
+                    <label for="cardName">Name on Card</label>
+                    <input type="text" id="cardName" class="payInput" required>
+                </div>
+                <div class="formGroup">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="text" id="expiryDate" class="payInput" placeholder="MM/YY" required>
+                </div>
+                <div class="formGroup">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" class="payInput" required>
+                </div>
+                <div class="cardIcons">
+                    <img src="images\visa.png" alt="Visa" class="cardIcon">
+                    <img src="images\master.png" alt="Mastercard" class="cardIcon">
+                    <img src="images\paypal.png" alt="PayPal" class="cardIcon">
+                </div>
+                <button type="submit" class="payButton">Pay Now</button>
+            </form>
+            <span class="close" id="closePayment">&times;</span>
+        </div>
+    </div> 
+
+    <footer class="footer">
+        <div class="footerContent">
+            <div class="footerSection">
+                <h2>About Us</h2>
+                <p>We are a premium sneaker store offering the latest styles and trends. Our mission is to provide quality products and exceptional customer service.</p>
+            </div>
+            <div class="footerSection">
+                <h2>Follow Us</h2>
+                <div class="socialIcons">
+                    <img src="images\facebook.png" width="30" alt="">
+                    <img src="images\twitter.png" width="30" alt="">
+                    <img src="images\instagram.png" width="30" alt="">
+                </div>
+            </div>
+            <div class="footerSection"> 
+                <h2>Contact Us</h2>
+                <p>Email: support@styleshoelife.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>&copy; 2024 StyleShoeLife.com. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
